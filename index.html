@@ -12,7 +12,41 @@
     <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/pose-detection"></script>
 
 </head>
+<style>
+
+    video {
+        position: absolute;
+        /* left: 500px; */
+        z-index: -99;
+    }
+    
+    /* .mask {
+        position: absolute;
+        z-index: -98;
+        height: 100%;
+        width: 100%;
+        background: white;
+    } */
+
+    .face {
+        position: absolute;
+        z-index: -97;
+        height: 200px;
+        width: 130px;
+        background: #91bbff;
+        border-radius: 100px;
+        filter: opacity(0.5);
+    }
+
+    #nose {
+        position: absolute;
+        z-index: -96;
+    }
+
+</style>
 <body>
     <script src="cam.js"></script>
+    <div class="mask"></div>
+    <div class="face"></div>
 </body>
 </html>
